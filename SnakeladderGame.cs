@@ -7,10 +7,12 @@ namespace SnakeLadder
     public class SnakeladderGame
     {
         public int pos = 0;
+        public int diceCount = 0;
         public void game()
         {
             while(pos<100)
             {
+                diceCount += 1;
                 Console.WriteLine("current position =" + pos);
                 Random ran = new Random();
                 int dice = ran.Next(1, 7);
@@ -37,7 +39,8 @@ namespace SnakeLadder
                         Console.WriteLine("position after dice =" + pos);
                         break;
                 }
-            } 
+            }
+            Console.WriteLine("dice count: "+diceCount);
         }
         
         
