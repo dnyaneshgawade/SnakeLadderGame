@@ -21,6 +21,8 @@ namespace SnakeLadder
                     case 0:
                         Console.WriteLine("you got ladder");
                         pos = pos + dice;
+                        if (pos > 100)
+                            pos = pos-dice;
                         Console.WriteLine("position after dice =" + pos);
                         break;
                     case 1:
