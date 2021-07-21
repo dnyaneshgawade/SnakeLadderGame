@@ -10,6 +10,9 @@ namespace SnakeLadder
         public void game()
         {
             Console.WriteLine("current position =" + pos);
+            Random ran = new Random();
+            int dice = ran.Next(1, 7);
+            Console.WriteLine("player got : "+dice);
         }
         
     }
